@@ -15,7 +15,8 @@ class BorderBtn: UIButton {
         super.awakeFromNib()
         layer.borderWidth = 2.3
         layer.borderColor = UIColor.white.cgColor
-    layer.cornerRadius = 5.0
+        layer.cornerRadius = 5.0
+        layer.backgroundColor=UIColor.darkGray.cgColor
         
     }
 
