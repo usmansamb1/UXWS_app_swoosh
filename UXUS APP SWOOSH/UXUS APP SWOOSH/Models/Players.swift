@@ -6,10 +6,12 @@
 //  Copyright © 2018 USMAN NAWAZ. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class Players: NSObject {
+class Players {
 
-    var desiguredLeague : String!
-    var selectedLeague : String!
+    var desiguredLeague : String! = ""
+    var selectedLeague : String! 
+    
+    
 }

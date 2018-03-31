@@ -16,7 +16,19 @@
 		3F0AC879206EEF2200C1EDF8 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AC878206EEF2200C1EDF8 /* Players.swift */; };
 		3F0AC87B206EF29400C1EDF8 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AC87A206EF29400C1EDF8 /* LeagueVC.swift */; };
 		3F0AC87D206EF2BD00C1EDF8 /* LevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AC87C206EF2BD00C1EDF8 /* LevelVC.swift */; };
+		3F6583D7206FD47200C789E9 /* UXUS_APP_SWOOSHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6583D6206FD47200C789E9 /* UXUS_APP_SWOOSHTests.swift */; };
+		3F6583DE206FD47800C789E9 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AC878206EEF2200C1EDF8 /* Players.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F6583D9206FD47200C789E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0AC854206ED48000C1EDF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F0AC85B206ED48000C1EDF8;
+			remoteInfo = "UXUS APP SWOOSH";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3F0AC85C206ED48000C1EDF8 /* UXUS APP SWOOSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UXUS APP SWOOSH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +42,20 @@
 		3F0AC878206EEF2200C1EDF8 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		3F0AC87A206EF29400C1EDF8 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
 		3F0AC87C206EF2BD00C1EDF8 /* LevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelVC.swift; sourceTree = "<group>"; };
+		3F6583D4206FD47200C789E9 /* UXUS APP SWOOSHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UXUS APP SWOOSHTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6583D6206FD47200C789E9 /* UXUS_APP_SWOOSHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXUS_APP_SWOOSHTests.swift; sourceTree = "<group>"; };
+		3F6583D8206FD47200C789E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3F0AC859206ED48000C1EDF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6583D1206FD47200C789E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				3F0AC85E206ED48000C1EDF8 /* UXUS APP SWOOSH */,
+				3F6583D5206FD47200C789E9 /* UXUS APP SWOOSHTests */,
 				3F0AC85D206ED48000C1EDF8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				3F0AC85C206ED48000C1EDF8 /* UXUS APP SWOOSH.app */,
+				3F6583D4206FD47200C789E9 /* UXUS APP SWOOSHTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +124,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3F6583D5206FD47200C789E9 /* UXUS APP SWOOSHTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F6583D6206FD47200C789E9 /* UXUS_APP_SWOOSHTests.swift */,
+				3F6583D8206FD47200C789E9 /* Info.plist */,
+			);
+			path = "UXUS APP SWOOSHTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +153,24 @@
 			productReference = 3F0AC85C206ED48000C1EDF8 /* UXUS APP SWOOSH.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3F6583D3206FD47200C789E9 /* UXUS APP SWOOSHTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6583DB206FD47200C789E9 /* Build configuration list for PBXNativeTarget "UXUS APP SWOOSHTests" */;
+			buildPhases = (
+				3F6583D0206FD47200C789E9 /* Sources */,
+				3F6583D1206FD47200C789E9 /* Frameworks */,
+				3F6583D2206FD47200C789E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F6583DA206FD47200C789E9 /* PBXTargetDependency */,
+			);
+			name = "UXUS APP SWOOSHTests";
+			productName = "UXUS APP SWOOSHTests";
+			productReference = 3F6583D4206FD47200C789E9 /* UXUS APP SWOOSHTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -133,6 +184,11 @@
 					3F0AC85B206ED48000C1EDF8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					3F6583D3206FD47200C789E9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F0AC85B206ED48000C1EDF8;
 					};
 				};
 			};
@@ -150,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				3F0AC85B206ED48000C1EDF8 /* UXUS APP SWOOSH */,
+				3F6583D3206FD47200C789E9 /* UXUS APP SWOOSHTests */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +219,13 @@
 				3F0AC86A206ED48000C1EDF8 /* LaunchScreen.storyboard in Resources */,
 				3F0AC867206ED48000C1EDF8 /* Assets.xcassets in Resources */,
 				3F0AC865206ED48000C1EDF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6583D2206FD47200C789E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +245,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F6583D0206FD47200C789E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6583DE206FD47800C789E9 /* Players.swift in Sources */,
+				3F6583D7206FD47200C789E9 /* UXUS_APP_SWOOSHTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F6583DA206FD47200C789E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F0AC85B206ED48000C1EDF8 /* UXUS APP SWOOSH */;
+			targetProxy = 3F6583D9206FD47200C789E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3F0AC863206ED48000C1EDF8 /* Main.storyboard */ = {
@@ -340,6 +421,38 @@
 			};
 			name = Release;
 		};
+		3F6583DC206FD47200C789E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4PHDWE74X;
+				INFOPLIST_FILE = "UXUS APP SWOOSHTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.uxwebdeveloper.com.UXUS-APP-SWOOSHTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UXUS APP SWOOSH.app/UXUS APP SWOOSH";
+			};
+			name = Debug;
+		};
+		3F6583DD206FD47200C789E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4PHDWE74X;
+				INFOPLIST_FILE = "UXUS APP SWOOSHTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.uxwebdeveloper.com.UXUS-APP-SWOOSHTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UXUS APP SWOOSH.app/UXUS APP SWOOSH";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,6 +470,15 @@
 			buildConfigurations = (
 				3F0AC86F206ED48000C1EDF8 /* Debug */,
 				3F0AC870206ED48000C1EDF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6583DB206FD47200C789E9 /* Build configuration list for PBXNativeTarget "UXUS APP SWOOSHTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6583DC206FD47200C789E9 /* Debug */,
+				3F6583DD206FD47200C789E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

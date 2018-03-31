@@ -9,10 +9,15 @@
 import UIKit
 
 class LevelVC: UIViewController {
+    
+    var playerSelected : Players!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+print("this player must be have ")
+        print(" = \(playerSelected.selectedLeague)")
         // Do any additional setup after loading the view.
     }
 

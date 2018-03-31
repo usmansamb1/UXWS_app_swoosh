@@ -133,6 +133,9 @@
                                         <state key="normal" title="MENS">
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="MensBtnPressed:" destination="LZG-Ou-nbB" eventType="touchUpInside" id="5MC-kW-puU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-11-mrp" customClass="BorderBtn" customModule="UXUS_APP_SWOOSH" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86" width="300" height="60"/>
@@ -142,6 +145,9 @@
                                         <state key="normal" title="WOMENS">
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="womensBtnPressed:" destination="LZG-Ou-nbB" eventType="touchUpInside" id="8nA-7W-gne"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvD-0B-vZL" customClass="BorderBtn" customModule="UXUS_APP_SWOOSH" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="172" width="300" height="60"/>
@@ -151,6 +157,9 @@
                                         <state key="normal" title="CO-ED">
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="coedBtnPressed:" destination="LZG-Ou-nbB" eventType="touchUpInside" id="VVH-DI-g11"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -185,6 +194,9 @@
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.1174555825" green="0.6454507491" blue="0.2494543742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="NextBtnPressed:" destination="LZG-Ou-nbB" eventType="touchUpInside" id="8Id-NU-un1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEI-gf-PDK" customClass="BorderBtn" customModule="UXUS_APP_SWOOSH" customModuleProvider="target">
                                 <rect key="frame" x="20" y="28" width="66" height="30"/>
@@ -219,7 +231,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="pcQ-oS-eY4" kind="show" id="UFd-Uq-W59"/>
+                        <outlet property="coedBtn" destination="vvD-0B-vZL" id="uzP-3R-bTY"/>
+                        <outlet property="mensBtn" destination="2OQ-xD-yzH" id="rcY-P8-YCS"/>
+                        <outlet property="nextBtn" destination="LwI-rg-FSW" id="zmM-p9-vIh"/>
+                        <outlet property="womensBtn" destination="Z1h-11-mrp" id="CWs-gd-mn4"/>
+                        <segue destination="pcQ-oS-eY4" kind="show" identifier="LevelRouteID" id="UFd-Uq-W59"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jfn-a6-C3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -254,24 +270,24 @@
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hi5-SD-BPb">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hi5-SD-BPb">
                                 <rect key="frame" x="35" y="186" width="344" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcw-dY-ghB" customClass="BorderBtn" customModule="UXUS_APP_SWOOSH" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcw-dY-ghB" customClass="BorderBtn" customModule="UXUS_APP_SWOOSH" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="164.66666666666666" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="1BM-OI-YUr"/>
                                         </constraints>
-                                        <state key="normal" title="MENS">
+                                        <state key="normal" title="Begainer">
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-bl-cAr" customClass="BorderBtn" customModule="UXUS_APP_SWOOSH" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-bl-cAr" customClass="BorderBtn" customModule="UXUS_APP_SWOOSH" customModuleProvider="target">
                                         <rect key="frame" x="179.66666666666663" y="0.0" width="164.33333333333337" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="YXK-WF-Eg1"/>
                                         </constraints>
-                                        <state key="normal" title="MENS">
+                                        <state key="normal" title="Boller">
                                             <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
@@ -317,8 +333,10 @@
                             <constraint firstItem="Dj3-Ck-tkO" firstAttribute="top" secondItem="gAC-fJ-ols" secondAttribute="top" constant="10" id="FQw-T3-F8q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hi5-SD-BPb" secondAttribute="trailing" constant="15" id="G8c-rB-Ihw"/>
                             <constraint firstItem="DRP-at-dcT" firstAttribute="centerX" secondItem="gAC-fJ-ols" secondAttribute="centerX" id="KWf-t2-uNP"/>
+                            <constraint firstItem="Hi5-SD-BPb" firstAttribute="top" secondItem="bLq-Pf-jJE" secondAttribute="bottom" constant="51" id="Plx-cG-BBw"/>
                             <constraint firstItem="bLq-Pf-jJE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gAC-fJ-ols" secondAttribute="leading" id="SeM-Op-aWr"/>
                             <constraint firstItem="uY8-3K-uqP" firstAttribute="centerX" secondItem="gAC-fJ-ols" secondAttribute="centerX" id="h8N-wY-2VI"/>
+                            <constraint firstItem="Hi5-SD-BPb" firstAttribute="centerX" secondItem="gAC-fJ-ols" secondAttribute="centerX" id="oGO-0V-ahM"/>
                             <constraint firstItem="Hi5-SD-BPb" firstAttribute="leading" secondItem="gAC-fJ-ols" secondAttribute="leadingMargin" constant="15" id="qcd-Z2-L8V"/>
                             <constraint firstItem="BlT-ZO-sHX" firstAttribute="top" secondItem="Xkf-cS-5dB" secondAttribute="bottom" id="sWQ-cY-5cs"/>
                             <constraint firstItem="bLq-Pf-jJE" firstAttribute="top" secondItem="uY8-3K-uqP" secondAttribute="bottom" constant="35" id="yqb-DB-vA1"/>
